@@ -1,0 +1,18 @@
+n=int(input())
+l=list(map(int,input().split()))
+m=l[0]
+for i in range(1,n):
+    if l[i]>m:
+        m=l[i]
+##print(m)
+j=1
+while True:
+    for i in range(len(l)):
+        x=0
+        if(l[i]==m-j):
+            print(l[i])
+            x=1
+            break
+    if(x==1):
+        break
+    j+=1
